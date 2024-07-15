@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: yellow;
+            height: 56vh;
+            /* grid-row-gap: 9px;
+            grid-column-gap: 9px; */
+            grid-gap: 9px 9px;
+            grid-template-columns: auto auto auto auto;
+            grid-column: 1 / 3;
+            /* grid-template-columns: 33px auto; */
+            /* grid-template-rows: 44px 84px; */
+            /* justify-content: space-between; */
+            /* align-content: space-between ; */
+        }
+        .item{
+            background-color: lightblue;
+            border: 2px solid red;
+            
+
+        }
+        .item:first-child {
+            grid-column: 1 / 3;
+            grid-row: 1 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum</div>
+        <div class="item">2</div> 
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+
+
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .animation {
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+
+        }
+        .box{
+            width: 300px;
+            background-color: red;
+            color: wheat;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: widthAnimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse;
+            /* animation: widthAnimate 3s ease-in-out 0.5sec 4 alternate; */
+
+        }
+        img{
+            animation-name: widthAnimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            /* animation: widthAnimate 3s ease-in-out 0.5sec 4 alternate; */
+
+        }
+        /* @keyframes widthAnimate{
+            from{
+                width: 300px;
+            }
+            to{
+                width: 600px;
+                height: 600px;
+            }
+
+        } */
+        @keyframes widthAnimate{
+            0%{
+                width: 300px;
+            }
+            20%{
+                width: 400px;
+            }
+            100%{
+                width: 600px;
+                height: 600px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="animation">
+        <div class="box">
+            <img src="./dragon.png" alt="" width="200px">
+        </div>
+
+    </div>
+    
+</body>
+</html>
